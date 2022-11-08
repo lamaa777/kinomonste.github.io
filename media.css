@@ -1,0 +1,82 @@
+/* МЕНЮ */
+nav.nav-desktop {
+    display: none;
+}
+
+nav.nav-mobile {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    nav.nav-desktop {
+        display: block;
+    }
+}
+
+@media (max-width: 1199px) {
+    nav.nav-mobile {
+        display: block;
+    }
+}
+
+.header-nav-elems-mobile ul:first-child {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.header-nav-elems-mobile ul:last-child {
+    background-color: #434343;
+    text-align: center;
+    padding: 32px;
+}
+.second-menu-mobile li {
+    padding-bottom: 19px;
+}
+.nav-mobile {
+    background-color: #222222;
+}
+
+.mobile-btn {
+    cursor: pointer;
+}
+
+.second-menu-mobile {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+/* ПОСТЕРЫ */
+
+.posters {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+}
+.poster {
+    min-width: auto;
+    min-height: auto;
+}
+@media (max-width: 900px) {
+    footer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1723px) {
+    .default-container {
+        padding: 0 2% 0 2%;
+    }
+}
+
+@media (max-width: 600px) {
+    .default-container {
+        text-align: center;
+    }
+    button {
+        margin: 0 auto;
+    }
+    .next-main-slider-dots {
+        justify-content: center;
+
+        margin-top: 100px;
+    }
+}

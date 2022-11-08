@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    background-color: #0c0b0b;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+.default-container {
+    max-width: 1716px;
+    margin: auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+header .header-nav {
+    display: flex;
+    height: 56px;
+    padding-top: 5px;
+}
+
+header .header-nav ul {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-nav-elems {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+ul.second-menu > li > a {
+    padding: 0 0 0 17px;
+}
+
+ul.second-menu > li > a:hover {
+    color: #ff3c00;
+}
+
+ul.second-menu > li:last-child {
+    margin-left: 17px;
+}
+
+ul.second-menu > li:last-child > a {
+    border: solid 1px #fff;
+    width: 80px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+ul.second-menu > li:last-child > a:hover {
+    background-color: #ff3c00;
+    color: #fff;
+}
+
+ul.second-menu > li:nth-last-child(2) > a {
+    margin-left: 100px;
+}
+
+ul.second-menu > li:first-child > a::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: #ff3c00;
+    border-radius: 50%;
+    left: 64px;
+    top: 14px;
+}
+
+ul.second-menu > li:first-child > a {
+    margin-right: 10px;
+}
+
+.main-sl-img {
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    object-position: top;
+}
+
+.hero-movie {
+    height: 75vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 1;
+}
+.hero-movie p:first-child {
+    font-size: 64px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.hero-movie p:nth-child(2) {
+    font-size: 15px;
+    padding-bottom: 26px;
+}
+
+.next-main-slider-dots {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.next-main-slider-dots > span {
+    width: 13px;
+    height: 13px;
+    background-color: #808080;
+    z-index: 1;
+    margin: 0 0 0 13px;
+    border-radius: 50%;
+}
+
+.next-main-slider-dots > span.activ {
+    background-color: rgb(255, 255, 255);
+}
+
+.fader-bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.fader-bg .fader-gradient-0 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.01) 77.36%,
+        rgba(0, 0, 0, 0.01) 77.36%,
+        #0c0b0b 96.82%
+    );
+    position: absolute;
+}
+
+.fader-bg .fader-gradient-1 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        277.92deg,
+        rgba(0, 0, 0, 0.349) 7.66%,
+        rgba(0, 0, 0, 0.945) 89.67%
+    );
+}
+
+button {
+    width: 209px;
+    height: 57px;
+    font-size: 20px;
+    background-color: #ff501a;
+    color: #fff;
+    border: solid 0px;
+    cursor: pointer;
+    transition: 250ms all;
+}
+
+button:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+.lbl-p {
+    font-size: 20px;
+}
+
+.default-container p {
+    margin-top: 62px;
+    margin-bottom: 19px;
+}
+
+.posters {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(237px, 1fr));
+    gap: 9px;
+}
+
+.poster {
+    background: green;
+    min-width: 237px;
+    min-height: 350px;
+    position: relative;
+    transition: 250ms all;
+}
+
+.poster:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.poster:hover a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+footer {
+    margin-top: 257px;
+}
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(181px, 1fr));
+    grid-auto-rows: auto;
+    gap: 20px;
+}
+
+.f-item p {
+    color: #6a6a6a;
+    font-size: 18px;
+}
+.footer-social {
+    margin-top: 42px;
+}
+.footer-social p {
+    color: #6a6a6a;
+    font-size: 18px;
+}
+
+.footer-social a img {
+    width: 32.57px;
+    height: 32.2px;
+    margin-top: 8px;
+    margin-right: 16px;
+}
+
+.footer-copy-text {
+    font-size: 14px;
+    color: #6a6a6a;
+    padding: 36px 0 6px 0;
+}
